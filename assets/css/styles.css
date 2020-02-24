@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
 #h1{
   font-size: 2.0rem;
   font-weight: bold;
@@ -35,7 +40,8 @@ p {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
 
 }
 
@@ -69,27 +75,47 @@ body {
   float: left;
 }
 
+.card-img-top{
+  width: 25rem;
+}
+
 .card-text-edited{
   bottom: 30px;
-  margin-top:10px;
+  /* margin-top:10px;
   margin-right: -20px;
-  margin-left:-20px;
+  margin-left:-20px; */
   text-align: center;
   background-color: #4aaaa5 ;
   color: white;
+
 }
 
 .card-margin{
-  margin: 1rem;
+  margin: 3rem;
+}
+
+.card-body{
+  background-color: #4aaaa5;
+}
+
+a:hover{
+    text-decoration: none;
+    font-style: normal;
+    font-size: 150%;
+    font-weight: bolder;
+    opacity: 90;
+    transition: .5s ease;
+    background-color: rgb(235,235,235);
+    
 }
 
 .flexWrap{
   display: "flex";
   flex-wrap:"wrap";
-  justify-content: space-between;
-  /* margin-right:0.8rem; */
-  /* margin-left:0.8rem; */
-}`
+  justify-content: normal;
+  /* margin-right:0rem;
+  margin-left:0rem; */
+}
 
 #font-portfolio{
   font-size:5px;
@@ -109,7 +135,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* tests for sticky footer */
+/* "Sticky footer */
 
 html,body
 {
@@ -140,17 +166,25 @@ background-color: #666666;
 border-top: #4aaaa5 10px solid;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+
   body, p {
     font-size: 25px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .card-img-top{
+    width: 100%;
   }
 
   .margin-centered {
-    margin-left: 5%;
-    margin-right:5%;
+    margin-left: 2%;
+    margin-right:2%;
 
   }
 
   h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
+}
